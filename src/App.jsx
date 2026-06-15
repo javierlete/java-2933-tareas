@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Tarea from './componentes/Tarea';
 import Tareas from './componentes/Tareas';
+import { TAREAS } from './mocks/tareas';
 
 export default function App() {
   return <>
@@ -11,7 +12,7 @@ export default function App() {
       <input className="tarea-nueva" placeholder="Tarea nueva"/>
     </div>
     
-    <Tareas/>
+    <Tareas tareas={TAREAS}/>
 
     <footer>&copy;2026 Javier Lete</footer>
   </>;

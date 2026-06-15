@@ -1,11 +1,8 @@
 import './Tareas.css';
 import Tarea from "./Tarea";
 
-export default function Tareas() {
+export default function Tareas({ tareas }) {
     return <ul className="tareas">
-        <li><Tarea /></li>
-        <li><Tarea /></li>
-        <li><Tarea /></li>
-        <li><Tarea /></li>
+        {tareas.map(tarea => <li key={tarea.id}><Tarea tarea={tarea} /></li>)}
     </ul>;
 }
