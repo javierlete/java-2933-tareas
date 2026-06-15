@@ -1,0 +1,8 @@
+.tarea-nueva {
+    width: 100%;
+
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    border: 1px solid lightgray;
+}
+
